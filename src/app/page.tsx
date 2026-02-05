@@ -38,6 +38,8 @@ interface Slide {
   colorTheme?: 'emerald' | 'amber' | 'blue' | 'indigo' | 'lime' | 'rose' | 'cyan' | 'teal' | 'orange';
   audio?: string;
   fullText?: string;
+  watermark?: string;
+  [key: string]: any;
 }
 
 const getThemeColors = (slide: Slide) => {
@@ -867,3 +869,4 @@ export default function Home() {
     </main>
   );
 }
+ 
